@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input</title>
+    
+</head>
+<body>
+    <form name="name" action="값을 보낼 주소" method="post" >
+        <input type="text" name="userid" value="everdevel"/>
+    </form><br><br>
+
+    <form name="email" action="값을 보낼 주소" method="post" >
+        <input type="email" name="useremail"/>
+        <intput type="submit" value="섹스"></intput>
+    </form><br><br>
+
+    <form name="search" action="값을 보낼 주소" method="post" >
+        <input type="serch" name="serchKeyword" value="everdevel"/>
+    </form><br><br>
+
+    <form name="url" action="값을 보낼 주소" method="post" >
+        <input type="url" name="userUrl"/><br>
+        <input type="submit" value="섹스"/>
+    </form><br><br>
+
+
+    <form name="number" action="값을 보낼 주소" method="post" >
+        <input type="number" name="usernumber" pattern="\d*"/>
+    </form>
+    <br><br>
+
+    <form name="step" action="값을 보낼 주소" method="post" >
+        <input type="number" name="" step='3'/><br><br>
+        <input type="number" name="" step='5'/><br><br>
+        <input type="number" name="" step='10'/><br><br>
+
+    </form><br><br>
+    
+    <form name = "telnum" action="값을 보낼 주소" method="post">
+        <input type="tel" name="phone1">-
+        <input type="tel" name="phone2">-
+        <input type="tel" name="phone3">
+    </form><br><br>
+
+    <form name ="color" action="" method="post">
+        <input type="color" name="userColor">
+    </form><br><br>
+
+
+    <form name ="range" action="" method="post">
+        <input type="range" name="userAge" min='20' max='29' value='25' step='1'>
+    </form><br><br>
+
+    
+
+    <form name ="ps" action="" method="post">
+        <input type="password" name="userPasword">
+    </form><br><br>
+
+    <br><br>
+
+    <h1> 당신의 취미는 ?</h1>
+    <form name ="cb" action="" method="post">
+
+        음악듣기<input type="checkbox" name="userHobby" value="listeningMusic"><br>
+        잠자기<input type="checkbox" name="userHobby" value="sleeping"><br>
+        멍때리기<input type="checkbox" name="userHobby" value="brainFade"><br>
+        책쓰기<input type="checkbox" name="userHobby" value="writingBook">
+    </form><br><br>
+
+
+    <br><br>
+    <h1>당신의 취미는 ? (하나만 선택 가능)</h1>
+    <form name ="radio" action="" method="post">
+        음악듣기<input type="radio" name="userhobby" value="listeningMusic"><br>
+        잠자기<input type="radio" name="userhobby" value="sleeping"><br>
+        멍때리기<input type="radio" name="userhobby" value="brainFade" checked><br>
+        책쓰기<input type="radio" name="userhobby" value="writingBook">
+    </form><br><br>
+
+    <br><br>
+
+    <h1>당신의 생일은?</h1>
+    <form name ="birthday" action="" method="post">
+        <input type="date" name="userBirthday" value="1994-11-16">
+        <input type="month" name="userBirth" value="1994-11">
+    </form><br><br>
+
+    <br><br>
+
+
+    <h1>올해의 몇째주에 당신의 생일이 있나요?</h1>
+    <form name ="week" action="" method="post">
+        <input type="week" name="userBirth">
+    </form><br><br>
+
+
+    <br><br>
+    <h1>기상시간</h1>
+    <form name ="time" action="" method="post">
+        <input type="time" name="waketime" value="02:04">
+    </form>
+    로아하다 새벽 2시에 잤찌<br><br>
+
+
+    <br><br>
+    
+    <form name ="num" action="" method="post" oninput="result.value=parseInt(num1.value)+parseInt(num2.value)">
+        <input type="number" id="num1" name="num1" value="0">+
+        <input type="number" id="num2" name="num2" value="0">=
+        <output for='num1, num2' name="result"></output>
+        </form><br><br>
+
+
+    
+    <form name ="buttton" action="" method="post">
+        <input type="button" value="헬로우 월드" onclick="alert('Hello World!!')">
+    </form><br><br>
+
+
+    
+    <form name ="file" action="" method="post">
+        <input type="file" name="" multiple>
+        <input type="file" name="" multiple>
+    </form><br><br>
+
+
+    
+    <form name ="test" action="result.php" method="post">
+        <label for='name'>이름</label><input type="text" name="id">
+        <label for="nickName">별명</label><input type='text' name="nickName">
+        <input type="submit" value="전송">
+        <input type="reset" value="모두 지우기">
+    </form><br><br>
+
+    
+    <form name ="" action="" method="post">
+        <input type="text" name="userid" placeholder="아이디를 입력하세요" autofocus autocomplete="on" required>
+        <br><br>
+        <input type="number" name="userAGE" pattern="\d*" placeholder="나이를 입력하세요">
+        <br><br>
+        <input type="number" name="userBirthYear" pattern="\d*" placeholder="태어난 년도를 입력하세요">
+        <input typle="text" name="sex" value="SEX" readonly>
+    </form><br><br>
+
+    <br><br>
+
+    <h1>당신은 언제 태어났어요?</h1>
+    
+    <form name ="birth" action="" method="post">
+        <select name="birthYear">
+            <option value="1997">1997년</option>
+            <option value="1997">1997년</option>
+            <option value="1997">1997년</option>
+        </select> 
+       <select name="birthㅡㅐㅜ소">
+            <option value="1월">1월</option>
+            <option value="2월">2월</option>
+            <option value="3월">3월</option>
+            <option value="4월">4월</option>
+            <option value="5월">5월</option>
+            <option value="6월">6월</option>
+            <option value="7">7월</option>
+            <option value="8">8월</option>
+            <option value="9">9월</option>
+            <option value="10">10월</option>
+            <option value="11">11월</option>
+            <option value="12">12월</option>
+        </select>
+        <select name="birthDay">
+            <option value="1">1일</option>
+            <option value="2">2일</option>
+            <option value="3">3일</option>
+            <option value="4">4일</option>
+            <option value="5">5일</option>
+            <option value="6">6일</option>
+            <option value="7">7일</option>
+            <option value="8">8일</option>
+            <option value="9">9일</option>
+            <option value="10">10일</option>
+            <option value="11">11일</option>
+            <option value="12">12일</option>
+            <option value="13">13일</option>
+            <option value="14">14일</option>
+            <option value="15">15일</option>
+            <option value="16">16일</option>
+            <option value="17">17일</option>
+            <option value="18">18일</option>
+            <option value="19">19일</option>
+            <option value="20">20일</option>
+            <option value="21">21일</option>
+            <option value="22">22일</option>
+            <option value="23">23일</option>
+            <option value="24">24일</option>
+            <option value="25">25일</option>
+            <option value="26">26일</option>
+            <option value="27">27일</option>
+            <option value="28">28일</option>
+            <option value="29">29일</option>
+            <option value="30">30일</option>
+            <option value="31">31일</option>
+        </select>
+    </form><br><br>
+
+    <br><br>
+    <h1>좋아하는 디즈니 캐릭터는?</h1>
+    <input type="text" list="disneyCharacterList">
+    <datalist id="disneyCharacterList">
+        <option value="mickey">mickey</option>
+        <option value="minnie">minnie</option>
+        <option value="duffy">duffy</option>
+        <option value="gelatonie">gelatonie</option>
+        <option value="stellalou">stellalou</option>
+        <option value="marie">marie</option>
+        <option value="rapunzel">rapunzel</option>
+    </datalist>
+
+    <br>
+    <br>
+    <h1>제일 좋아하는 캐릭터는?</h1>
+    <select>
+        <optgroup label="disney">
+            <option value="mickey">미키마우스</option>
+            <option value="minnie">미니마우스</option>
+            <option value="duffy">더피</option>
+        </optgroup>
+        <optgroup label="disney-marvle">
+            <option value="ironman">아이언맨</option>    
+            <option value="thanos">타노스</option>
+            <option value="vision">비전</option>
+        </optgroup>
+    </select>
+
+    <br><br>
+
+    <progress value="40" max="100"></progress>
+    <meter value="40" max="100"></meter> <br>
+
+    <meter min="0" max="100" low="30" optimum="50" value="90" high="80"> 
+</body>
+</html>
